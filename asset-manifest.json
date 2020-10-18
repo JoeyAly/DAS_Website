@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/DAS_Website/static/js/main.373eae7f.chunk.js",
-    "main.js.map": "/DAS_Website/static/js/main.373eae7f.chunk.js.map",
+    "main.js": "/DAS_Website/static/js/main.53e19010.chunk.js",
+    "main.js.map": "/DAS_Website/static/js/main.53e19010.chunk.js.map",
     "runtime-main.js": "/DAS_Website/static/js/runtime-main.99c0ba43.js",
     "runtime-main.js.map": "/DAS_Website/static/js/runtime-main.99c0ba43.js.map",
-    "static/js/2.efba1ff9.chunk.js": "/DAS_Website/static/js/2.efba1ff9.chunk.js",
-    "static/js/2.efba1ff9.chunk.js.map": "/DAS_Website/static/js/2.efba1ff9.chunk.js.map",
+    "static/js/2.c899a6f3.chunk.js": "/DAS_Website/static/js/2.c899a6f3.chunk.js",
+    "static/js/2.c899a6f3.chunk.js.map": "/DAS_Website/static/js/2.c899a6f3.chunk.js.map",
     "index.html": "/DAS_Website/index.html",
-    "precache-manifest.aec3a30a85ed30481fbb48b987809446.js": "/DAS_Website/precache-manifest.aec3a30a85ed30481fbb48b987809446.js",
+    "precache-manifest.9824a07b6184241ff7620961ac781da7.js": "/DAS_Website/precache-manifest.9824a07b6184241ff7620961ac781da7.js",
     "service-worker.js": "/DAS_Website/service-worker.js",
-    "static/js/2.efba1ff9.chunk.js.LICENSE.txt": "/DAS_Website/static/js/2.efba1ff9.chunk.js.LICENSE.txt"
+    "static/js/2.c899a6f3.chunk.js.LICENSE.txt": "/DAS_Website/static/js/2.c899a6f3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.99c0ba43.js",
-    "static/js/2.efba1ff9.chunk.js",
-    "static/js/main.373eae7f.chunk.js"
+    "static/js/2.c899a6f3.chunk.js",
+    "static/js/main.53e19010.chunk.js"
   ]
 }
