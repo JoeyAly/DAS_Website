@@ -83,6 +83,8 @@ border-bottom: 2px solid transparent;
     }
 }
 `
+
+  
 export const NavLinks =styled(Link)`
     color: #fff;
     display: flex;

@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 import{FaBars, FaTimes} from  'react-icons/fa';
 import { IconContext} from 'react-icons/lib'
 import { Button} from '../../globalStyles';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 import {
     Nav, 
     NavbarContainer, 
@@ -20,6 +22,7 @@ const Navbar = () => {
     const [button, setButton] = useState(true);
 
     const handleClick = () => setClick(!click);
+    const closeMobileMenu = () => setClick(false);
 
     const showButton = () => {
         if(window.innerWidth <= 960){
@@ -50,14 +53,24 @@ window.addEventListener('resize', showButton);
                         <NavItem>
                             <NavLinks to='/'>Home</NavLinks>
                         </NavItem>                   
-                        <NavItem>
-                            <NavLinks to='/
-                            hoursCompleted'>Hours Completed</NavLinks>
-                        </NavItem>                    
-                        <NavItem>
-                            <NavLinks to='/
-                            questionnaire'>Questionnaire</NavLinks>
-                        </NavItem>
+                        <li></li>
+                        <Link
+                            to='/hoursCompleted'
+                            className='nav-links'
+                            onClick={closeMobileMenu}
+                        >
+                            Hours Completed
+                        </Link>
+                                         
+                        
+                        <Link
+                            to='/questionnaire'
+                            className='nav-links'
+                            onClick={closeMobileMenu}
+                        >
+                            Questionnaire
+                        </Link>
+                      
                         <NavItemBtn>
                             {button ? (
                                 <NavBtnLink to='/sign-up'>
