@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "51ba783187759be1c18dc950b1073118",
+    "revision": "92e9a388c2d8d5ff1abb92fde70989bf",
     "url": "/DAS_Website/index.html"
   },
   {
-    "revision": "edd337d92b9d1224925a",
-    "url": "/DAS_Website/static/css/main.c1c7830e.chunk.css"
+    "revision": "b95f68b4f7e10c4bb900",
+    "url": "/DAS_Website/static/css/main.155ccb45.chunk.css"
   },
   {
     "revision": "9b6c1812ce193d512e68",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DAS_Website/static/js/2.a3ffac5c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "edd337d92b9d1224925a",
-    "url": "/DAS_Website/static/js/main.f89c406d.chunk.js"
+    "revision": "b95f68b4f7e10c4bb900",
+    "url": "/DAS_Website/static/js/main.529cefa1.chunk.js"
   },
   {
     "revision": "d48fd548c1d66ed555d6",
