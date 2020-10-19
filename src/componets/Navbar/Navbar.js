@@ -4,6 +4,7 @@ import { IconContext} from 'react-icons/lib'
 import { Button} from '../../globalStyles';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+
 import {
     Nav, 
     NavbarContainer, 
@@ -53,7 +54,7 @@ window.addEventListener('resize', showButton);
                         <NavItem>
                             <NavLinks to='/'>Home</NavLinks>
                         </NavItem>                   
-                        <li></li>
+                        
                         <Link
                             to='/hoursCompleted'
                             className='nav-links'

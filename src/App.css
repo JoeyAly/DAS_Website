@@ -6,8 +6,8 @@
   }
   
   .home,
-  .questionnaire,
   .hoursCompleted,
+  .questionnaire,
   .sign-up {
     display: flex;
     height: 90vh;
@@ -16,14 +16,6 @@
     font-size: 3rem;
   }
   
-  .questionnaire {
-      
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #000000;
-    font-size: 100px;
-  }
   
   .hoursCompleted { 
     background-position: center;

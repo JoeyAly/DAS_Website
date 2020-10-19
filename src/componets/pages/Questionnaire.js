@@ -1,6 +1,16 @@
-import React from 'react';
+import React, { Component} from 'react';
 import '../../App.css';
+import  { UserForm} from '../../componets/Form/UserForm';
 
-export default function Questionnaire() {
-  return <h1 className='questionnaire'>QUESTIONNAIRE</h1>;
-}
+
+class Questionnaire extends Component{
+  render() {
+    return (
+      <div className="Questionnaire">
+        <UserForm />
+      </div>
+    );
+    }
+  }
+
+export default  Questionnaire
