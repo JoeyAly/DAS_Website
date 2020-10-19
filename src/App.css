@@ -22,7 +22,7 @@
     background-size: fill;
     background-repeat: no-repeat;
     color: #000000;
-    font-size: 100px;
+    font-size: 50px;
   }
   
   .sign-up {
@@ -32,3 +32,16 @@
     color: #fff;
     font-size: 100px;
   }
+  .center {
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.titleCenter{
+  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+  

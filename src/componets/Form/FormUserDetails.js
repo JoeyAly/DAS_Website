@@ -3,6 +3,9 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
+import '../../App.css';
+
+
 
 export class FormUserDetails extends Component {
     continue = e => {
@@ -14,14 +17,27 @@ export class FormUserDetails extends Component {
     render() {
         const { values, handleChange} =this.props;
         return (
+            
             <MuiThemeProvider> 
+                
                 <React.Fragment>
-                    <AppBar title= "Enter User Details" />
-                    <TextField
+                <div class="titleCenter">
+                    <AppBar 
+                        
+                        title= "Enter User Details " 
+                        
+                     
+                    />
+                    </div>
+                    <div class="center">
+                    <TextField 
                         hintText= "Enter Your First Name"
                         floatingLabelText= "First Name"
                         onChange={handleChange('firstName')}
                         defaultValue={values.firstName}
+                        alignText= "Center"
+                        
+                        
                         
                     
                 />
@@ -45,7 +61,9 @@ export class FormUserDetails extends Component {
                     primary={true}
                     style={styles.button}
                     onClick={this.continue}
+                    
                 />
+                 </div>
                 </React.Fragment>
             </MuiThemeProvider>
           
@@ -55,9 +73,12 @@ export class FormUserDetails extends Component {
 
 const styles ={
     button: {
-        margin: 15,
-        
+        margin: 10,
     }
+
 }
+
+
+
 
 export default FormUserDetails;

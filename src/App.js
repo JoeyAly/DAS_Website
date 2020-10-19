@@ -2,7 +2,7 @@ import React from 'react';
 import GlobalStyle from './globalStyles';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import { Navbar} from './componets';
-import './App.css';
+
 import Home from './componets/pages/Home'
 import Questionnaire from './componets/pages/Questionnaire'
 import HoursCompleted from './componets/pages/HoursCompleted';
