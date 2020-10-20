@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "195ac2b4d430c1d9e3aef8ca881d84d6",
+    "revision": "7272287c1d594582329ea1c1ec923ec0",
     "url": "/DAS_Website/index.html"
   },
   {
-    "revision": "cd61ca73719cfdade9d9",
+    "revision": "cf237351efc7f8d077ca",
     "url": "/DAS_Website/static/css/main.155ccb45.chunk.css"
   },
   {
-    "revision": "a2fcc02df47e6d6df4a4",
-    "url": "/DAS_Website/static/js/2.497fa74d.chunk.js"
+    "revision": "153c389acbb7bc0e83b1",
+    "url": "/DAS_Website/static/js/2.6f233846.chunk.js"
   },
   {
     "revision": "a1b34313bdc89efb233ec836d1ef73b1",
-    "url": "/DAS_Website/static/js/2.497fa74d.chunk.js.LICENSE.txt"
+    "url": "/DAS_Website/static/js/2.6f233846.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cd61ca73719cfdade9d9",
-    "url": "/DAS_Website/static/js/main.5f761169.chunk.js"
+    "revision": "cf237351efc7f8d077ca",
+    "url": "/DAS_Website/static/js/main.fcdd95d9.chunk.js"
   },
   {
     "revision": "d48fd548c1d66ed555d6",
