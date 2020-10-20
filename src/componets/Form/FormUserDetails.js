@@ -7,15 +7,19 @@ import '../../App.css';
 
 
 
+
 export class FormUserDetails extends Component {
     continue = e => {
         e.preventDefault();
         this.props.nextStep();
+      
     };
 
-
+    
     render() {
         const { values, handleChange} =this.props;
+        
+
         return (
             
             <MuiThemeProvider> 
@@ -31,22 +35,27 @@ export class FormUserDetails extends Component {
                     </div>
                     <div class="center">
                     <TextField 
-                        hintText= "Enter Your First Name"
-                        floatingLabelText= "First Name"
-                        onChange={handleChange('firstName')}
-                        defaultValue={values.firstName}
-                        alignText= "Center"
-                        
-                        
+                        hintText= "Enter The Date of Activity (mm/dd/yyyy) "
+                        floatingLabelText= "Date"
+                        onChange={handleChange('activityDate')}
+                        defaultValue={values.activityDate}
+                     
                         
                     
                 />
                 <br/>
                 <TextField
-                    hintText="Enter Last Name"
-                    floatingLabelText= "Last Name"
-                    onChange={handleChange('lastName')}
-                    defaultValue={values.lastName}
+                    hintText="Enter Hours Completed"
+                    floatingLabelText= "Hours Completed"
+                    onChange={handleChange('hoursCompleted')}
+                    defaultValue={values.hoursCompleted}
+                />
+                <br/>
+                <TextField
+                    hintText="Choose the Type of Hour"
+                    floatingLabelText= "Hours Type"
+                    onChange={handleChange('hoursType')}
+                    defaultValue={values.hoursType}
                 />
                 <br/>
                 <TextField
@@ -56,8 +65,15 @@ export class FormUserDetails extends Component {
                     defaultValue={values.email}
                 />
                 <br/>
+                <TextField
+                    hintText="Describe Your Activity"
+                    floatingLabelText= "Activity"
+                    onChange={handleChange('activity')}
+                    defaultValue={values.activity}
+                />
+                <br/>
                 <RaisedButton
-                    label="Continue"
+                    label="Submit"
                     primary={true}
                     style={styles.button}
                     onClick={this.continue}

@@ -1,15 +1,16 @@
 import React, { Component} from 'react';
 import FormUserDetails from './FormUserDetails';
+import Confirm from './Confirm';
 
 export class UserForm extends Component {
     state = {
       step: 1,
-      firstName: '',
-      lastName: '',
+      activityDate: '',
+      hoursCompleted: '',
+      hoursType: '',
       email: '',
-      occupation: '',
-      city: '',
-      bio: ''
+      activity: '',
+    
     };
   
     // Proceed to next step
@@ -19,14 +20,14 @@ export class UserForm extends Component {
         step: step + 1
       });
     };
-  
-    // Go back to prev step
+
     prevStep = () => {
       const { step } = this.state;
       this.setState({
         step: step - 1
       });
     };
+
   
     // Handle fields change
     handleChange = input => e => {
@@ -35,8 +36,8 @@ export class UserForm extends Component {
   
     render() {
       const { step } = this.state;
-      const { firstName, lastName, email, occupation, city, bio } = this.state;
-      const values = { firstName, lastName, email, occupation, city, bio };
+      const { activityDate, hoursCompleted, hoursType, email, activity } = this.state;
+      const values = { activityDate, hoursCompleted, hoursType, email, activity };
   
       switch (step) {
         case 1:
@@ -47,16 +48,20 @@ export class UserForm extends Component {
               values={values}
             />
           );
-        case 2:
-          return <h1> Personal Details</h1>;
-            
-            
-          
+
+          case 2:
+          return (
+            <Confirm
+              nextStep={this.nextStep}
+              prevStep={this.prevStep}
+              values={values}
+            />
+          );
+        
         case 3:
           return <h1> Confirm</h1>;
           
-        case 4:
-          return 
+        
             
         default:
           (console.log('This is a multi-step form built with React.'))
