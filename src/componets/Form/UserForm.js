@@ -1,6 +1,8 @@
 import React, { Component} from 'react';
 import FormUserDetails from './FormUserDetails';
 import Confirm from './Confirm';
+import Success from './Success';
+
 
 export class UserForm extends Component {
     state = {
@@ -25,6 +27,13 @@ export class UserForm extends Component {
       const { step } = this.state;
       this.setState({
         step: step - 1
+      });
+    };
+
+    firstStep = () => {
+      const { step } = this.state;
+      this.setState({
+        step: step - 2
       });
     };
 
@@ -59,13 +68,13 @@ export class UserForm extends Component {
           );
         
         case 3:
-          return <h1> Confirm</h1>;
+          return (
+            <Success 
+              firstStep={this.firstStep}
+            />
           
-        
-            
-        default:
-          (console.log('This is a multi-step form built with React.'))
-      }
+          );
+          }
     }
   }
   

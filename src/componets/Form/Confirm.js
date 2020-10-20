@@ -33,16 +33,16 @@ export class Confirm extends Component {
                 primaryText ="Activity Date" secondaryText={activityDate} />
              
               <ListItem
-                primaryText ="Completed Hours" secondary={hoursCompleted} />
+                primaryText ="Completed Hours" secondaryText={hoursCompleted} />
               
               <ListItem
-                primaryText="Type of Hours" secondary={hoursType} />
+                primaryText="Type of Hours" secondaryText={hoursType} />
               
               <ListItem
-                primaryText="Email" secondary={email} />
+                primaryText="Email" secondaryText={email} />
               
               <ListItem
-                primaryText="Activity" secondary={activity} />
+                primaryText="Activity" secondaryText={activity} />
               
             </List>
             <br />

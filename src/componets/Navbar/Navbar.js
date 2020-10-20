@@ -69,7 +69,7 @@ window.addEventListener('resize', showButton);
                             className='nav-links'
                             onClick={closeMobileMenu}
                         >
-                            Questionnaire
+                            Reporting Form
                         </Link>
                       
                         <NavItemBtn>
