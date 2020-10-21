@@ -1,12 +1,12 @@
 import React from 'react';
 import GlobalStyle from './globalStyles';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import { Navbar} from './componets';
+import { Navbar} from './components';
 
-import Home from './componets/pages/Home'
-import Questionnaire from './componets/pages/Questionnaire'
-import HoursCompleted from './componets/pages/HoursCompleted';
-import SignUp from './componets/pages/SignUp';
+import Home from './pages/HomePage/Home'
+import HoursCompleted from './pages/HoursCompletedPage/HoursCompleted';
+import SignUp from './pages/SignUpPage/SignUp';
+import UserForms from './pages/UserFormsPage/UserForms';
 
 
 
@@ -17,7 +17,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path='/' exact component={Home}/>
-        <Route path='/questionnaire' component={Questionnaire}/>
+        <Route path='/userForms' component={UserForms}/>
         <Route path='/hoursCompleted' component={HoursCompleted}/>
         <Route path='/signUp' component={SignUp}/>
       </Switch>

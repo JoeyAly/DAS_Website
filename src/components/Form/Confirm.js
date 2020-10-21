@@ -18,7 +18,7 @@ export class Confirm extends Component {
 
   render() {
     const {
-      values: { activityDate, hoursCompleted, hoursType, email, activity }
+      values: { activityDate, hoursCompleted, hoursType, learned, activity }
     } = this.props;
     return (
       <MuiThemeProvider>
@@ -39,7 +39,7 @@ export class Confirm extends Component {
                 primaryText="Type of Hours" secondaryText={hoursType} />
               
               <ListItem
-                primaryText="Email" secondaryText={email} />
+                primaryText="Lessons Learned" secondaryText={learned} />
               
               <ListItem
                 primaryText="Activity" secondaryText={activity} />

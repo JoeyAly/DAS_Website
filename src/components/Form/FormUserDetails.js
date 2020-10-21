@@ -26,8 +26,8 @@ export class FormUserDetails extends Component {
                 
                 <React.Fragment>
                 <div class="titleCenter">
-                    <AppBar 
-                        
+                    <AppBar
+
                         title= "Enter User Details " 
                         
                      
@@ -59,10 +59,10 @@ export class FormUserDetails extends Component {
                 />
                 <br/>
                 <TextField
-                    hintText="Enter Email"
-                    floatingLabelText= "Email"
-                    onChange={handleChange('email')}
-                    defaultValue={values.email}
+                    hintText="Describe What You've Learned"
+                    floatingLabelText= "Lessons Learned"
+                    onChange={handleChange('learned')}
+                    defaultValue={values.learned}
                 />
                 <br/>
                 <TextField
@@ -72,7 +72,7 @@ export class FormUserDetails extends Component {
                     defaultValue={values.activity}
                 />
                 <br/>
-                <RaisedButton
+                <RaisedButton 
                     label="Submit"
                     primary={true}
                     style={styles.button}
@@ -90,6 +90,7 @@ export class FormUserDetails extends Component {
 const styles ={
     button: {
         margin: 10,
+        background: '#132c6b'
     }
 
 }

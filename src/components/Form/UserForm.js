@@ -10,7 +10,7 @@ export class UserForm extends Component {
       activityDate: '',
       hoursCompleted: '',
       hoursType: '',
-      email: '',
+      learned: '',
       activity: '',
     
     };
@@ -45,8 +45,8 @@ export class UserForm extends Component {
   
     render() {
       const { step } = this.state;
-      const { activityDate, hoursCompleted, hoursType, email, activity } = this.state;
-      const values = { activityDate, hoursCompleted, hoursType, email, activity };
+      const { activityDate, hoursCompleted, hoursType, learned, activity } = this.state;
+      const values = { activityDate, hoursCompleted, hoursType, learned, activity };
   
       switch (step) {
         case 1:
